@@ -12,7 +12,7 @@ app.use(express.json())
 
 //ROUTE
 
-app.use('api/todo', todoRoutes)
+app.use('/api/todo', todoRoutes)
 
 mongoose.connect(process.env.MONGO_URI || '', {
     dbName: 'TODODB'
